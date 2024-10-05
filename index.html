@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA PACE Mission</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="assets/images/nasa_logo.png" alt="NASA Logo" class="logo">
+            <img src="assets/images/pace_logo.png" alt="PACE Logo" class="logo">
+            <input type="text" placeholder="Search..." class="search-bar">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="science.html">Science</a></li>
+            <li><a href="quiz.html">Take Quiz</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <video autoplay muted loop class="background-video">
+                <source src="assets/videos/pace_intro.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay">
+                <h1>Welcome to the NASA PACE Mission</h1>
+                <p>Explore the Plankton, Aerosol, Cloud, ocean Ecosystem mission. Learn about how PACE is advancing ocean and atmospheric science!</p>
+            </div>
+        </section>
+
+        <section class="learn-more">
+            <h2>Get to Know PACE</h2>
+            <ul>
+                <li>What is PACE?</li>
+                <li>Why is understanding and protecting ocean ecosystems important?</li>
+                <li>Why measure the atmosphere and ocean together?</li>
+                <li>How will PACE benefit the economy and society?</li>
+            </ul>
+        </section>
+
+        <section class="call-to-action">
+            <p>After reading, try our quiz to test your knowledge!</p>
+            <button id="quiz-btn">Take the Quiz</button>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
