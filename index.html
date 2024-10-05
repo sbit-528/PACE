@@ -4,54 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA PACE Mission</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pace-logo.png" type="image/png">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="header-content">
-            <img src="assets/images/nasa_logo.png" alt="NASA Logo" class="logo">
-            <img src="assets/images/pace_logo.png" alt="PACE Logo" class="logo">
+        <div class="logo-container">
+            <img src="nasa-logo.png" alt="NASA Logo" class="logo">
+            <img src="pace-logo.png" alt="PACE Logo" class="logo">
             <input type="text" placeholder="Search..." class="search-bar">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#learn-more">Learn More</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#documents">Documents</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="mission.html">Mission</a></li>
-            <li><a href="science.html">Science</a></li>
-            <li><a href="quiz.html">Take Quiz</a></li>
-        </ul>
-    </nav>
-
+    <!-- Main Content Section -->
     <main>
-        <section class="intro">
-            <video autoplay muted loop class="background-video">
-                <source src="assets/videos/pace_intro.mp4" type="video/mp4">
-            </video>
-            <div class="video-overlay">
-                <h1>Welcome to the NASA PACE Mission</h1>
-                <p>Explore the Plankton, Aerosol, Cloud, ocean Ecosystem mission. Learn about how PACE is advancing ocean and atmospheric science!</p>
-            </div>
+        <section id="home" class="hero-section">
+            <h1>Get to Know PACE</h1>
+            <p>What is PACE? | How will PACE advance beyond previous ocean color missions? | Why is understanding and protecting ocean ecosystems important? | Why is understanding and protecting the atmosphere important? | Why measure the atmosphere and ocean together? | What are some of the products that PACE will deliver? | Who will benefit from PACE data and its applications? | How will PACE monitor ocean ecology? | How will PACE provide insight into aerosols and clouds? | How will PACE help us to better track the carbon cycle? | How will PACE benefit the economy and society?</p>
         </section>
 
-        <section class="learn-more">
-            <h2>Get to Know PACE</h2>
+        <section id="about">
+            <h2>What is PACE?</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>PACE is NASA's Plankton, Aerosol, Cloud, ocean Ecosystem mission, currently in the design phase of mission development. It is scheduled to launch in 2024, extending and improving NASA's over 20-year record of satellite observations of global ocean biology, aerosols (tiny particles suspended in the atmosphere), and clouds.</p>
+        </section>
+
+        <section id="mission">
+            <h2>PACE's Mission Goals</h2>
+            <p>PACE has two fundamental science goals:</p>
             <ul>
-                <li>What is PACE?</li>
-                <li>Why is understanding and protecting ocean ecosystems important?</li>
-                <li>Why measure the atmosphere and ocean together?</li>
-                <li>How will PACE benefit the economy and society?</li>
+                <li>To extend key systematic ocean color, aerosol, and cloud data records for Earth system and climate studies.</li>
+                <li>To address new and emerging science questions using its advanced instruments, surpassing the capabilities of previous and current missions.</li>
             </ul>
         </section>
 
-        <section class="call-to-action">
-            <p>After reading, try our quiz to test your knowledge!</p>
-            <button id="quiz-btn">Take the Quiz</button>
+        <section id="science">
+            <h2>Science Instruments</h2>
+            <p>The primary science instruments planned for PACE are:</p>
+            <ul>
+                <li><strong>Ocean Color Instrument (OCI):</strong> A spectrometer used to measure the intensity of light over portions of the electromagnetic spectrum.</li>
+                <li><strong>Multi-angle Polarimeters:</strong> Radiometers used to measure how the oscillation of sunlight within a geometric plane is changed by passing through clouds, aerosols, and the ocean.</li>
+            </ul>
+        </section>
+
+        <section id="importance">
+            <h2>Why Do We Need PACE?</h2>
+            <h3>Ocean Ecology</h3>
+            <p>Our ocean teems with life, and many of its most vital species are invisible to us. The types of life in these habitats are determined by microscopic algae known as phytoplankton...</p>
+
+            <h3>Understanding Ocean Ecosystems</h3>
+            <p>The ocean is a critical part of the world's economy. Forty percent of the world's population lives within 100 km of a coastline...</p>
+
+            <h3>Understanding the Atmosphere</h3>
+            <p>PACE's observations of aerosols and clouds will be used by various stakeholders to improve our understanding and ability to forecast weather and climate...</p>
+        </section>
+        
+        <section id="products">
+            <h2>PACE Products</h2>
+            <p>PACE's OCI and polarimeters will deliver a variety of science data products...</p>
+            <ul>
+                <li>Water-leaving reflectance</li>
+                <li>Chlorophyll-a</li>
+                <li>Phytoplankton absorption</li>
+                <li>Non-Algal Products (NAP)</li>
+                <li>Particulate backscattering</li>
+            </ul>
         </section>
     </main>
 
-    <script src="js/main.js"></script>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 NASA PACE Mission. All rights reserved.</p>
+        <p>NASA Official: Jeremy Werdell | Webmaster: Daren Casey | Last updated: Sep 25 2024</p>
+    </footer>
 </body>
 </html>
